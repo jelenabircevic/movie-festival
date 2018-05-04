@@ -1,0 +1,65 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+h1 {
+    text-align: center;
+}
+div.container {
+    width: 960px;
+    background-color: rgb(113, 153, 113);
+    
+    
+}
+div>div *{
+    display: block;
+    width:100%;
+    box-sizing: border-box;
+    margin: 10px auto;
+}
+input, select {
+    padding: 5px 15px;
+}
+
+div {
+    margin: 20px auto;
+    padding:10px;
+    border: 1px solid darkgreen;
+    border-radius: 5px;
+    background-color:white
+}
+
+#add, #addmtop, #addprogram {
+    background-color:darkgreen;
+    
+    color: white;
+    padding: 10px;
+    display: block;
+    border:none;
+    border-radius: 5px;
+}
+#error1, #error2, #error3 {
+    color: red;
+    font-size: 0.8em;
+    visibility: hidden;
+}
+#movieList li, #movieProgram li {
+    margin:0;
+    padding: 5px 15px;
+    vertical-align: middle;
+}
+#movieList, #movieProgram {
+    padding-left: 0;
+}
+li:nth-of-type(odd) {
+    background-color: lightgray;
+}
+#movieList input {
+    box-sizing: border-box;
+    float: right;
+    width: initial;
+    margin: 0;
+    padding: 0;
+    border:none;
+    background-color: inherit;
+}

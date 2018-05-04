@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+    <title>Movie list</title>
+</head>
+
+<body>
+    <h1>Movie list</h1>
+    <div class="container">
+        <p>Movie</p>
+        <div>
+            <label>Title
+                <input type="text" placeholder="Title" required id="title">
+            </label>
+            <label>Length (min)
+                <input type="number" placeholder="Length in min" required id="length">
+            </label>
+            <select name="genre" id="genre">
+                <option value="">-</option>
+                <option value="drama">Drama</option>
+                <option value="action">Action</option>
+                <option value="horror">Horror</option>
+                <option value="comedy">Comedy</option>
+                <option value="adventure">Adventure</option>
+            </select>
+            <p id="error1">error message</p>
+            <input type="button" value="Add Movie" id="add">
+            <ul id="movieList"></ul>
+        </div>
+
+        <p>Program</p>
+        <div class="program">
+            <label> Date
+                <br>
+                <input type="date" name="date" id="date" placeholder="mm/dd/yyyy"> </label>
+            <p id="error2">error message</p>
+
+            <input type="button" value="Create program" id="addprogram">
+            <ul id="movieProgram"></ul>
+            <label for="">Choose movie
+                <select name="movies" id="movies">
+                    <option value="">-</option>
+                </select>
+            </label>
+            <label for="">Choose program
+                <select name="programs" id="programs">
+                    <option value="">-</option>
+
+                </select>
+            </label>
+            <p id="error3">error message</p>
+            <input type="button" value="Add movie to program" id="addmtop">
+        </div>
+    </div>
+    <script src="./js/entities.js"></script>
+    <script src="./js/utilities.js"></script>
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
