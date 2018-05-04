@@ -20,11 +20,13 @@ var duration = 0;
 add.addEventListener("click", function(event) {
     var input = fetchData();
 
-    if (!movieList.hasElement(input) &&
-        JSON.stringify(input) != JSON.stringify({})
-    ) {
-        addMovie(input);
+    if (movieList.hasElement(input) || (JSON.stringify(input) == JSON.stringify({}))) {
+        err1.style.visibility = "visible";
+        err1.textContent = "This movie already exists!";
+        return;
     }
+    err1.style.visibility = "hidden";
+    addMovie(input);
     i++;
 });
 addp.addEventListener("click", function(event) {

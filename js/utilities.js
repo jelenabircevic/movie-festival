@@ -37,10 +37,10 @@ function validateAdding(movie, program) {
     return false;
 }
 
-function updateList() {
+function updateList(movie) {
 
     var liNode = document.createElement('li');
-    var liText = document.createTextNode(movieList[i].getData());
+    var liText = document.createTextNode(movie.getData());
 
     liNode.appendChild(liText);
     liNode.innerHTML += ' <input type="button" value="X" id=i' + i + '>';
@@ -58,11 +58,11 @@ function updateList() {
 }
 
 
-function updateProgramList() {
+function updateProgramList(program) {
     var liNode = document.createElement('li');
-    liNode.appendChild(document.createTextNode(programList[k].getData()));
+    liNode.appendChild(document.createTextNode(program.getData()));
     ulProgram.appendChild(liNode);
-    selectP.appendChild(updateSelect(document.createTextNode(programList[k].getData())));
+    selectP.appendChild(updateSelect(document.createTextNode(program.getData())));
     k++;
 }
 
@@ -152,12 +152,12 @@ function resetAdding(a, b) {
 
 function addMovie(obj) {
     movieList.push(obj);
-    updateList();
+    updateList(obj);
 }
 
 function addProgram(obj) {
     programList.push(obj);
-    updateProgramList();
+    updateProgramList(obj);
 
 }
 
