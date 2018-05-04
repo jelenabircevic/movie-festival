@@ -5,10 +5,12 @@ body {
 h1 {
     text-align: center;
 }
+
 div.container {
-    width: 960px;
+    width: 90%;
     background-color: rgb(113, 153, 113);
-    
+    margin: 0 auto;
+    max-width: 960px;
     
 }
 div>div *{
@@ -62,4 +64,9 @@ li:nth-of-type(odd) {
     padding: 0;
     border:none;
     background-color: inherit;
+}
+div.main {
+    width: 90vw;
+    margin: 0 auto;
+    border: none;
 }
