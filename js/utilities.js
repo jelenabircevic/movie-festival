@@ -1,15 +1,15 @@
 function validateData(t, d, g) {
     if (!t) {
-        err.textContent = 'Title is required!';
-        err.style.visibility = 'visible';
+        err1.textContent = 'Title is required!';
+        err1.style.visibility = 'visible';
     } else if (!d || (parseInt(d) <= 0)) {
-        err.textContent = 'Check the movie length!';
-        err.style.visibility = 'visible';
+        err1.textContent = 'Check the movie length!';
+        err1.style.visibility = 'visible';
     } else if (g == '-') {
-        err.textContent = 'Choose genre of the movie!';
-        err.style.visibility = 'visible';
+        err1.textContent = 'Choose genre of the movie!';
+        err1.style.visibility = 'visible';
     } else {
-        err.style.visibility = 'hidden';
+        err1.style.visibility = 'hidden';
         return true;
     }
     return false;
