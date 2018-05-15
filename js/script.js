@@ -1,5 +1,5 @@
 var add = document.querySelector("#add");
-var err = document.querySelector("#error1");
+var err1 = document.querySelector("#error1");
 var err2 = document.querySelector("#error2");
 var err3 = document.querySelector("#error3");
 var addp = document.querySelector("#addprogram");
